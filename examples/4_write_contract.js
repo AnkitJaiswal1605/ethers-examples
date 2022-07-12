@@ -26,7 +26,7 @@ const main = async () => {
 
     const tx = await contractWithWallet.mint({value: ethers.utils.parseEther("0.01")})
     await tx.wait()
-1
+
     console.log(tx)
 
     const balanceOfSender = await contract.balanceOf(account1)
