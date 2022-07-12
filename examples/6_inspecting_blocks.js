@@ -1,7 +1,7 @@
 const { ethers } = require("ethers");
 
-const INFURA_ID = ''
-const provider = new ethers.providers.JsonRpcProvider(`https://mainnet.infura.io/v3/${INFURA_ID}`)
+const INFURA_ID = '222bc8dab3ce4f14b501b689ab71bd64'
+const provider = new ethers.providers.JsonRpcProvider(`https://rinkeby.infura.io/v3/${INFURA_ID}`)
 
 const main = async () => {
     const block = await provider.getBlockNumber()
